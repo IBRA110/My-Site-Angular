@@ -1,0 +1,53 @@
+{
+	"NAVBAR":{
+		"HOME": "HOME",
+		"ABOUT": "ABOUT ME",
+		"SKILLS": "SKILLS",
+		"PORTFOLIO": "PORTFOLIO",
+		"CONTACT": "CONTACT"
+	},
+	"HOME":{
+		"TITLE": "Frontend development",
+		"CONTENT": "If your business is not on the internet then your business will be out of business.",
+		"BUTTON": "CONTACT ME",
+		"DOWNLOAD": "Download CV"
+	},
+	"ABOUT":{
+		"ABOUT":{
+			"TITLE": "About me",
+			"CONTENT": "Hello! My name is Ibrahim. Welcome to my professional page.",
+			"AGE": "Age",
+			"COUNTRY": "Country",
+			"NAME": "Turkey"
+		},
+		"GRAPHIC-DESIGNER":{
+			"TITLE": "Graphic Designer",
+			"CONTENT": "Whether you're looking for someone to create a logo for your brand or business, I got you covered."
+		},
+		"WEB-DEVELOPMENT":{
+			"TITLE": "Web Development",
+			"CONTENT": "Your website won't only look great but it will be user friendly and mobile ready."
+		},
+		"SEARCH-ENGINE-OPTIMIZATION":{
+			"TITLE": "Search Engine Optimization",
+			"CONTENT":"Looking to boost your online presence? With proven techniques, your website will reach it's full potential."
+		}
+	},
+	"SKILLS":{
+		"TITLE": "SKILLS",
+		"LANG": "LANGUAGES"
+	},
+	"PORTFOLIO":{
+		"TITLE": "VIEW SITE"
+	},
+	"CONTACT":{
+		"FIRSTNAME": "Name",
+		"EMAIL": "Email",
+		"MESSAGE": "Type your message Here...",
+		"SEND": "SEND",
+		"VALIDNAME": "Enter name",
+		"VALIDEMAIL": "Enter email",
+		"INVALIDEMAIL": "Enter valid email",
+		"VALIDMESSAGE": "Enter message"
+	}
+}

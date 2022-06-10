@@ -1,0 +1,28 @@
+<div class='my-admin' *ngIf="messages.length; else noMessages">
+	<h2>My Messages</h2>
+	<div class='my-message' *ngFor="let message of messages">
+		<div class='content'>
+			<div class='name'>
+				<h3>Name:</h3>
+				<p>{{ message.name }}</p>
+			</div>
+			<div class='name'>
+				<h3>Email:</h3>
+				<p>{{ message.email }}</p>
+			</div>
+			<div class='name'>
+				<h3>Message:</h3>
+				<p>{{ message.message }}</p>
+			</div>
+			<div class='date'>
+				<p>{{ message.date | date: 'medium'}}</p>
+			</div>
+		</div>
+		<button (click)="remove(message.id)">Delete</button>
+	</div>
+</div>
+<ng-template #noMessages>
+	<div class='no'>
+		<h3>No Messages</h3>
+	</div>
+</ng-template>
