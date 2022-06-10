@@ -1,0 +1,11 @@
+/.editorconfig
+/.firebaserc
+/.browserlistrc
+/.firebase
+/.vscode
+/.angular
+/dist
+/node_modules
+/firebase.json
+
+
