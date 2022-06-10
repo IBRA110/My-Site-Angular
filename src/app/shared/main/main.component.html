@@ -1,0 +1,135 @@
+<div class='content'>
+	<div class='content_menu'>
+		<div class='toggle_bar'>
+			<button (click)="translate.use('en')" class="lang_btn">
+				<img src='./../../assets/images/EN.png'>
+			</button>
+			<button (click)="translate.use('de')" class="lang_btn">
+				<img src='./../../assets/images/DE.png'>
+			</button>
+			<button (click)="translate.use('tr')" class="lang_btn">
+				<img src='./../../assets/images/TR.png'>
+			</button>
+			<button (click)="translate.use('ru')" class="lang_btn">
+				<img src='./../../assets/images/RU.png'>
+			</button>
+			<button 
+				(click)="changeBackgroundColor('purple') "style="background: rgb(179,165,16);
+	background: -moz-linear-gradient(top,  rgba(179,165,16,1) 0%, rgba(196,31,31,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(179,165,16,1) 0%,rgba(196,31,31,1) 100%);
+	background: linear-gradient(to bottom,  rgba(179,165,16,1) 0%,rgba(196,31,31,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a510', endColorstr='#c41f1f',GradientType=0 );
+">
+			</button>
+			<button 
+				 (click)="changeBackgroundColor('lightblue') "style="	background: rgb(32,168,186);
+	background: -moz-linear-gradient(top,  rgba(32,168,186,1) 0%, rgba(196,31,31,1) 100%); 
+	background: -webkit-linear-gradient(top,  rgba(32,168,186,1) 0%,rgba(196,31,31,1) 100%);
+	background: linear-gradient(to bottom,  rgba(32,168,186,1) 0%,rgba(196,31,31,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a8ba', endColorstr='#c41f1f',GradientType=0 );">
+				</button>
+			<button 
+				(click)="changeBackgroundColor('coral')" style="	background: rgb(206,200,18);
+	background: -moz-linear-gradient(top,  rgb(206,200,18) 0%, rgba(0,160,155,1) 100%);
+	background: -webkit-linear-gradient(top,  rgb(206,200,18) 0%,rgba(0,160,155,1) 100%);
+	background: linear-gradient(to bottom,  rgb(206,200,18) 0%,rgba(0,160,155,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cec812', endColorstr='#00a09b',GradientType=0 );
+">
+			</button>
+			<button 
+				(click)="changeBackgroundColor('gray')"	style="	background: rgb(135,135,135);
+	background: -moz-linear-gradient(top,  rgba(135,135,135,1) 0%, rgba(28,28,28,1) 100%); 
+	background: -webkit-linear-gradient(top,  rgba(135,135,135,1) 0%,rgba(28,28,28,1) 100%);
+background: linear-gradient(to bottom,  rgba(135,135,135,1) 0%,rgba(28,28,28,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878787', endColorstr='#1c1c1c',GradientType=0 );" >
+			</button>
+			<button 
+				(click)="changeBackgroundColor('black')" style="background: rgb(9,18,33); 
+	background: -moz-linear-gradient(top,  rgba(9,18,33,1) 0%, rgba(9,33,12,1) 100%); 
+	background: -webkit-linear-gradient(top,  rgba(9,18,33,1) 0%,rgba(9,33,12,1) 100%);
+	background: linear-gradient(to bottom,  rgba(9,18,33,1) 0%,rgba(9,33,12,1) 100%);	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091221', endColorstr='#09210c',GradientType=0 );">
+			</button>
+		</div>
+	</div>
+	<div #scrollMe (click)="closeMenu(setting)" class='content_left'>
+		<router-outlet (activate)="scroll(scrollMe)"></router-outlet>
+	</div>
+	<div class='content_right'>
+		<div class='avatar'>
+			<img src='./../../assets/images/my_photo.jpg'>
+		</div>
+		<div class='my_name'>
+			<h2 >Mamedov Ibrahim</h2>
+		</div>
+		<ul class='nav_bar_menu'>
+			<li class='nav_bar_list'>
+				<a [routerLink]="['']" class='nav_bar_link'>
+					<div class='name'>
+						<span>{{ 'NAVBAR.HOME' | translate }}</span>
+					</div>
+				</a>
+			</li>
+			<li class='nav_bar_list'>
+				<a [routerLink]="['/about']" class='nav_bar_link'>
+					<div class='name'>
+						<span>{{ 'NAVBAR.ABOUT' | translate }}</span>
+					</div>
+				</a>
+			</li>
+			<li class='nav_bar_list'>
+				<a [routerLink]="['/portfolio']" class='nav_bar_link'>
+					<div class='name'>
+						<span>{{ 'NAVBAR.PORTFOLIO' | translate }}</span>
+					</div>
+				</a>
+			</li>
+			<li class='nav_bar_list'>
+				<a [routerLink]="['/contact']" class='nav_bar_link'>
+					<div class='name'>
+						<span>{{ 'NAVBAR.CONTACT' | translate }}</span>	
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class='navigation'>
+			<ul>
+				<li class='navigation_list'>
+					<a class='nav_bu' [routerLink]="['']">
+						<span class='navigation_icon'>
+							<ion-icon name="home-outline"></ion-icon>
+						</span>
+					</a>
+				</li>
+				<li class='navigation_list'>
+					<a class='nav_bu' [routerLink]="['/about']">
+						<span class='navigation_icon'>
+							<ion-icon name="person-outline"></ion-icon>
+						</span>
+					</a>
+				</li>
+				<li class='navigation_list'>
+					<a class='nav_bu' [routerLink]="['/portfolio']">
+						<span class='navigation_icon'>
+							<ion-icon name="images-outline"></ion-icon>
+						</span>
+					</a>
+				</li>
+				<li class='navigation_list'>
+					<a class='nav_bu' [routerLink]="['/contact']">
+						<span class='navigation_icon'>
+							<ion-icon name="mail-outline"></ion-icon>
+						</span>
+					</a>
+				</li>
+				<li class='navigation_list'>
+					<a class='nav_bu' #setting (click)='showMenu(setting)'>
+						<span class='navigation_icon'>
+						<ion-icon name="settings-outline"></ion-icon>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

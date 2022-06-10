@@ -1,0 +1,57 @@
+<div data-aos="zoom-out" class='contact'>
+	<form [formGroup]="form" (ngSubmit)="submit()" class='contact_form'>
+		<h2 class='lang_h2'>{{ 'NAVBAR.CONTACT' | translate }}</h2>
+			<div class='col'>
+				<div class='inputbox'>
+					<input type='text' name='first_name' required='required' formControlName="name">
+					<span class='text'>{{ 'CONTACT.FIRSTNAME' | translate }}</span>
+					<span class='line'></span>
+				</div>
+				<div class='Er' *ngIf="form.get('name').touched && form.get('name').invalid">
+					<small *ngIf="form.get('name').errors.required">{{ 'CONTACT.VALIDNAME' | translate }}</small>
+				</div>
+			</div>
+			<div class='col'>
+				<div class='inputbox'>
+					<input type='text' name='email' formControlName="email" required='required'>
+					<span class='text'>{{ 'CONTACT.EMAIL' | translate }}</span>
+					<span class='line'></span>
+				</div>
+				<div class='Er' *ngIf="form.get('email').touched && form.get('email').invalid">
+					<small *ngIf="form.get('email').errors.required">{{ 'CONTACT.VALIDEMAIL' | translate }}</small>
+					<small *ngIf="form.get('email').errors.pattern">{{ 'CONTACT.INVALIDEMAIL' | translate }}</small>
+				</div>
+			</div>
+			<div class='colarea'>
+				<div class='inputbox textarea'>
+					<textarea name='message' formControlName="message" required='required'></textarea>
+					<span class='text'>{{ 'CONTACT.MESSAGE' | translate }}</span>
+					<span class='line'></span>
+				</div>
+				<div class='Er' *ngIf="form.get('message').touched && form.get('message').invalid">
+					<small *ngIf="form.get('message').errors.required">{{ 'CONTACT.VALIDMESSAGE' | translate }}</small>
+				</div>
+			</div>
+			<div class='col_button'>
+				<button type='submit' [disabled]='form.invalid || submitted'>{{ 'CONTACT.SEND' | translate }}</button>
+			</div>
+	</form>
+	<div class='info'>
+		<div class='game'>
+			<app-board></app-board>
+		</div>	
+		<div class='contact-info'>
+			<a href='tel: +90 537 261 41 07'><ion-icon name="call-outline"></ion-icon>+90 537 261 41 07</a>
+			<p><ion-icon name="mail-outline"></ion-icon>mamedovarbeiter@gmail.com</p>
+			<p><ion-icon name="location-outline"></ion-icon>Türkiye, Antalya</p>
+			<div class='links'>
+				<a href='https://www.facebook.com/mamedovprogrammer/' class='face' target="_blank">
+					<ion-icon name="logo-facebook"></ion-icon></a>
+				<a href='https://github.com/IBRA110' target="_blank" class='git'>
+					<ion-icon name="logo-github"></ion-icon>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,265 @@
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}	
+.contact_form{
+	padding: 10px;
+	margin-right: calc(5px + (65 - 20) * ((100vw - 320px) / (1200 - 320)));
+	border-radius: 5px;
+	width: calc((350px + (300 - 50) * ((100vw - 320px) / (1200 - 320))) / 2);
+	transition: 500ms;
+
+	h2{
+		color: rgba(255,255,255);
+		font-size: calc(14px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+		font-weight: 700;
+	}
+}
+
+.col
+{
+	position: relative;
+	width: 100%;
+	margin: calc(5px + (35 - 10) * ((100vw - 320px) / 
+	(1200 - 320))) 0 
+		calc(5px + (15 - 10) * ((100vw - 320px) / 
+	(1200 - 320)));
+	transition: 500ms;
+}
+.col_button
+{
+	position: relative;
+	width: 50%;
+	margin: calc(5px + (20 - 10) * ((100vw - 320px) / (1200 - 320))) 0 calc(5px + (15 - 10) * ((100vw - 320px) / (1200 - 320)));
+	transition: 500ms;
+}
+.colarea
+{
+	position: relative;
+	width: 100%;
+	margin: calc(5px + (35 - 10) * ((100vw - 320px) / 
+	(1200 - 320))) 0 
+		calc(5px + (15 - 10) * ((100vw - 320px) / 
+	(1200 - 320)));
+	transition: 500ms;
+}
+.inputbox
+{
+	position: relative;
+	width: 100%;
+	height: calc(35px + (35 - 30) * ((100vw - 320px) / 
+		(1200 - 320)));
+	color: rgba(255,255,255);
+}
+.inputbox input, .textarea textarea
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 0px 10px;
+	z-index: 1;
+	color: rgba(0,0,0);
+}
+.text
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 
+		calc(14px + (24 - 20) * ((100vw - 320px) / 
+		(1200 - 320)));
+	padding: 0 10px;
+	display: block;
+	transition: 500ms;
+	pointer-events: none;
+}
+.inputbox input:focus + .text,
+.inputbox input:valid + .text 
+{
+	top: -35px;
+	left: -10px;
+}
+.line
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	display: block;
+	transition: 500ms;
+	background: rgb(255,255,255);
+	pointer-events: none;
+}
+.inputbox input:focus ~ .line,
+.inputbox input:valid ~ .line 
+{
+	height: 100%;
+}
+.textarea
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+}
+.textarea textarea
+{
+	height: 100%;
+	resize: none;
+}
+.inputbox textarea:focus + .text,
+.inputbox textarea:valid + .text 
+{
+	top: -35px;
+	left: -10px;
+}
+.inputbox textarea:focus ~ .line,
+.inputbox textarea:valid ~ .line 
+{
+	height: 100%;
+}
+button{
+	padding: 10px 40px;
+	cursor: pointer;
+	outline: none;
+	color: rgba(255,255,255);
+	font-size: 18px;
+	background-color: rgba(255,255,255,0.05);
+	border-radius: 5px;
+	box-shadow: -1px -1px 2px rgba(255,255,255,0.25),
+		inset -1px -1px 5px  rgba(255,255,255,0.25),
+		8px 10px 10px rgba(0,0,0,0.4),
+		inset -2px -2px 5px rgba(0,0,0,0.3);
+}
+button:hover
+{
+	background-color: rgba(255,255,255,0);
+}
+button:active
+{
+	background-color: rgba(0,0,0,0.25);
+}
+button:disabled
+{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.info{
+	width:calc((450px + (400 - 50) * ((100vw - 320px) / (1200 - 320))) / 2);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	
+	.game{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 5px;
+		text-align: center;
+	}
+
+	.contact-info{
+		height: 30%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: space-between;
+		
+		a, p{
+			color: white;
+			font-size: 18px;
+			display: flex;
+	
+			ion-icon{
+				font-size: 18px;
+				margin-right: 10px;
+			}
+		}
+	}
+	.links{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		
+		a{
+			transition: 300ms ease-in;
+			ion-icon{
+				font-size: 42px;
+				margin: 0 30px;
+			}
+		}
+		.face:hover{
+			transform: scale(1.2);
+			color: rgba(13, 124, 184);
+		}
+		.git:hover{
+			transform: scale(1.2);
+			color: rgba(0, 0, 0);
+		}
+	}
+}
+.Er{
+	margin: 5px 0px 0px 0px;
+	small{
+		font-size: 16px;
+	}
+}
+
+
+@media (max-width: 768px){
+	.contact{
+		position: relative;
+		display: block;	
+		padding-bottom: 50px;
+		width: calc(300px + (500 - 100) * ((100vw - 320px) / (1200 - 320)));
+		margin: 0 auto;
+		
+		.links{
+			width: auto;
+			margin: 0 auto;
+		}
+		.contact_form{
+			width: 100%;
+			display: flex;
+			margin: 0 0 30px 0;
+			flex-direction: column;
+			justify-content: space-around;
+			gap: 50px;
+			
+			h2{
+				font-size: calc(25px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+			}
+			.text{	
+				font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+				line-height: 30px;
+			}
+		}
+		.col_button{
+			input{
+			font-size: calc(25px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+			}
+		}
+		.info{
+			width: 100%;
+			
+		}
+	}
+	.inputbox textarea:focus + .text,
+	.inputbox textarea:valid + .text {
+		top: -55px;
+		left: -10px;
+	}
+}
+

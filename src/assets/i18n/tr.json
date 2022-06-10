@@ -1,0 +1,53 @@
+{
+	"NAVBAR":{
+		"HOME": "ANASAYFA",
+		"ABOUT": "BENIM HAKKIMDA",
+		"SKILLS": "BECERİLER",
+		"PORTFOLIO": "PORTFÖY",
+		"CONTACT": "ILETIŞIM"
+	},
+	"HOME":{
+		"TITLE": "Frontend geliştirme",
+		"CONTENT": "İşletmeniz internette değilse, işiniz bitecek.",
+		"BUTTON": "BENİMLE İRTİBATA GEÇİN",
+		"DOWNLOAD": "Özgeçmişi İndir"
+	},
+	"ABOUT":{
+		"ABOUT":{
+			"TITLE": "Benim hakkımda",
+			"CONTENT": "Merhaba! Benim adım ibrahim. Profesyonel sayfama hoş geldiniz.",
+			"AGE": "Yaş",
+			"COUNTRY": "Ülke",
+			"NAME": "Türkiye"
+		},
+		"GRAPHIC-DESIGNER":{
+			"TITLE": "Grafik Tasarımcı",
+			"CONTENT": "Markanız veya işletmeniz için bir logo oluşturacak birini arıyorsanız, sizi korudum."
+		},
+		"WEB-DEVELOPMENT":{
+			"TITLE": "Web Geliştirme",
+			"CONTENT": "Web siteniz sadece harika görünmekle kalmayacak, aynı zamanda kullanıcı dostu ve mobil kullanıma hazır olacaktır."
+		},
+		"SEARCH-ENGINE-OPTIMIZATION":{
+			"TITLE": "Arama motoru optimizasyonu",
+			"CONTENT":"Çevrimiçi varlığınızı artırmak mı istiyorsunuz? Kanıtlanmış tekniklerle web siteniz tam potansiyeline ulaşacaktır."
+		}
+	},
+	"SKILLS":{
+		"TITLE": "BECERİLER",
+		"LANG": "DİLLER"
+	},
+	"PORTFOLIO":{
+		"TITLE": "SITEYI GÖRÜNTÜLE"
+	},
+	"CONTACT":{
+		"FIRSTNAME": "Isim",
+		"EMAIL": "E-POSTA",
+		"MESSAGE": "Mesajınızı buraya yazın...",
+		"SEND": "GÖNDER",
+		"VALIDNAME": "Bir isim yaz",
+		"VALIDEMAIL": "Bir e-posta adresi yazın",
+		"INVALIDEMAIL": "Geçerli bir e-posta adresi yazın",
+		"VALIDMESSAGE": "Bir mesaj yaz"
+	}
+}
